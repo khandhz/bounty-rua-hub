@@ -1,0 +1,69 @@
+-- + Rua Hup Auto Bounty Beta Version =))
+-- + made by Teru and developers and ,........................
+-- + discord.gg/CejANXn8sa
+
+getgenv().Config = {
+    ["Default Team"] = "Pirates",
+    ["Auto Team"] = {["Enabled"] = true,
+        ["Lock"] = {
+            ["Bounty"] = {0, 30000000}, 
+            ["Hornor"] = {0, 30000000}
+        }
+    },
+    ["Panic % Health"] = {40, 50},
+    ["Skip"] = { 
+        ["Fruit"] = {["Enabled"] = true,
+            ["List"] = {
+                "Portal-Portal",
+                "Chop-Chop",
+                "Kitsune-Kitsune",
+                "Human-Human"
+            }
+        },
+        ["V4"] = true
+    },
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = true,
+        ["Hit and Run"] = true
+    },
+    ["Spam All Skill On V4"] = {
+        ["Enabled"] = true,
+        ["Weapons"] = {"Melee", "Gun"}
+    },
+    ["Chat Spamming"] = {
+        ["Enabled"] = false,
+        ["Message"] = {"Auto Bounty Rùa Hub On Top!"}
+    },
+    ["Misc"] = {
+        ["Cam Farm"] = true,
+        ["Hop Region"] = "Singapore", --// Best region in Asia
+        ["White Screen"] = false,
+        ["Click Delay"] = 0.95,
+        ["Hide Map"] = true -- For Fps Boost
+    },
+      ["Items"] = {["Prioritize"] = {"Melee", "Sword"},
+        ["Melee"] = {["Prioritize"] = {"Z", "X", "C"},
+            ["Z"] = {true, 0, 0},
+            ["X"] = {true, 1.5, 0},
+            ["C"] = {true, 0, 0},
+        },
+        ["Blox Fruit"] = {["Prioritize"] = {"C", "Z", "X", "F"},
+            ["Z"] = {true, 0, 0},
+            ["X"] = {true, 0, 0},
+            ["C"] = {true, 0, 0},
+            ["V"] = {true, 0, 0},
+            ["F"] = {false, 0, 0},
+        },
+        ["Sword"] = {["Prioritize"] = {"Z", "X"},
+            ["Z"] = {true, 0, 0},
+            ["X"] = {true, 0, 0},
+        },
+        ["Gun"] = {["Prioritize"] = {"Z", "X"},
+            ["Z"] = {false, 0, 0},
+            ["X"] = {false, 0, 0},
+        },
+    }
+}
+
+
+loadstring(game:HttpGet("https://github.com/ErutTheTeru/script/blob/main/blox-autobounty.lua?raw=true"))()
